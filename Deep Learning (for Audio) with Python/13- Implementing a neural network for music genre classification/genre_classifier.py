@@ -25,7 +25,7 @@ if __name__ == "__main__":
     inputs_train, inputs_test, targets_train, targets_test = train_test_split(inputs, targets,
                                                                               test_size=0.3)
 
-    # build the network archuitecture
+    # build the network archuitecture MLP
     model = keras.Sequential([
         # input layer
         keras.layers.Flatten(input_shape=(inputs.shape[1], inputs.shape[2])),  # hop_lenght
